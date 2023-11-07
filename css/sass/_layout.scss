@@ -66,25 +66,27 @@ $gutter: 32px;
 
 @for $i from 1 through 12{
   .grid-#{$i}{
-      flex: $i;
-      max-width: calc(#{grid($i)} - #{$gutter});
-      margin: 0 $gutter/2;
-      padding: 16px 0px;
-      
-      @include responsive(s){
-        flex: 1;
-        max-width: calc(100% - #{$gutter});
-      }
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex: $i;
+    max-width: calc(#{grid($i)} - #{$gutter});
+    margin: $gutter/2;
+    padding: 16px 0px;
+    
+    @include responsive(s){
+      flex: 1;
+      max-width: calc(100% - #{$gutter});
+    }
   }
 }
 
 @for $i from 1 through 12{
   .grid-nobreak-#{$i}{
-      width: calc(#{grid($i)} - #{$gutter});
-      margin: $gutter / 2;
-
-      padding: 16px 0px;
-      float: left;
+    flex: $i;
+    max-width: calc(#{grid($i)} - #{$gutter});
+    margin: $gutter/2;
+    padding: 16px 0px;
   }
 }
 
@@ -95,13 +97,7 @@ $gutter: 32px;
   margin: 0 auto;
 
   padding: 128px 24px;
-
-  /*display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;*/
   overflow: hidden;
-  //position: sticky;
 
 
   @include responsive(s) {

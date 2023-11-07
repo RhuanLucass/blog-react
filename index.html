@@ -27,7 +27,7 @@
     <div class="flex-start-row">
       <div class="search">
         <form class="flex">
-          <input type="text" name="search" placeholder="Buscar">
+          <input type="text" name="search" placeholder="Buscar"/>
           <button class="btn-search"></button>
         </form>
       </div>
@@ -50,7 +50,7 @@
         <li><a href="#" class="link-menu-mobile">Contato</a></li>
         <li class="py-2 px-2">
           <form class="flex">
-            <input type="text" name="search" placeholder="Buscar">
+            <input type="text" name="search" placeholder="Buscar"/>
             <button class="btn-search"></button>
           </form>
         </li>
@@ -59,14 +59,15 @@
   </div>
 
   <!--============ HERO ============-->
-  <section class="container flex-center">
-    <div class="row mt-9">
-      <div class="grid-6">
+  <section class="container">
+    <div class="row flex-start-row mt-5 ml-4">
+      <div class="grid-5 pl-3">
         <h1 class="h0">blog<span>.</span></h1>
-        <p>Um blog para todos. Escrever. Ler. Comentar. Contribuir. Aprender. Conectar.</p>
+        <p class="w-75">Um blog para todos. Escrever. Ler. Comentar. Contribuir. Aprender. Conectar.</p>
         <a href="" class="btn mt-2">Começar a escrever</a>
       </div>
-      <div class="grid-6 flex-center mt-9">
+      <div class="grid1"></div>
+      <div class="grid-4 flex-center mt-8 ml-7">
         <img class="blog-image" src="svg/blog.svg" alt=""/>
       </div>
     </div>
@@ -195,41 +196,349 @@
       <img src="img/02.png" alt=""/>
     </div>
     <div class="row mt-3">
-      <div class="grid-12">
+      <div class="grid-12 flex-center">
         <h6 class="color-gray text-center">06 NOV 2023</h6>
         <h6 class="uppercase color-primary text-center">tecnologia</h6>
         
         <h3 class="text-center">O que esperar do cinema para 2021?</h3>
         <p class="mt-1 text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum delectus eius numquam.</p>
         <div class="my-3 flex-center">
-          <a href="" class="link color-primary mt-4">Ler mais</a>
+          <a href="" class="link color-primary">Ler mais</a>
         </div>
       </div>
     </div>
   </section>
   
+  <!--============ MOST RECENT ============-->
+  <section class="container">
+    <h3 class="ml-2 mb-3">Mais recentes</h3>
+    <div class="row">
+        <div class="grid-4 card hidden p-0">
+            <div class="row">
+                <div class="grid-nobreak-3">
+                    <h6 class="color-gray text-center mb-2">NOV</h6>
+                    <h3 class="color-primary text-center bt-black py-2">12</h3>
+                </div>
+                <div class="grid-nobreak-9">
+                    <div>
+                        <h6 class="uppercase color-primary">GAMES</h6>
+                        <a href="" class="link-title">
+                            <h4 class="mt-1">Novo console da SONY: o PS5</h4>
+                        </a>
+                        
+                        <p class="my-2">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                            Ornare urna pharetra ut ac, pellentesque.
+                        </p>
+                        <a href="" class="link p-0">Ler mais</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+      <div class="grid-4 card hidden p-0">
+        <div class="row">
+            <div class="grid-nobreak-3">
+                <h6 class="color-gray text-center mb-2">NOV</h6>
+                <h3 class="color-primary text-center bt-black py-2">15</h3>
+            </div>
+            <div class="grid-nobreak-9">
+                <div>
+                    <h6 class="uppercase color-primary">TECNOLOGIA</h6>
+                    <a href="" class="link-title">
+                        <h4 class="mt-1">Vale a pena comprar um PC gamer?</h4>
+                    </a>
+                    
+                    <p class="my-2">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                        Ornare urna pharetra ut ac, pellentesque.
+                    </p>
+                    <a href="" class="link p-0">Ler mais</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="grid-4 card hidden p-0">
+        <div class="row">
+            <div class="grid-nobreak-3">
+                <h6 class="color-gray text-center mb-2">NOV</h6>
+                <h3 class="color-primary text-center bt-black py-2">07</h3>
+            </div>
+            <div class="grid-nobreak-9">
+                <div>
+                    <h6 class="uppercase color-primary">Cinema</h6>
+                    <a href="" class="link-title">
+                        <h4 class="mt-1">Sai o novo trailer do Spider-man.</h4>
+                    </a>
+                    
+                    <p class="my-2">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                        Ornare urna pharetra ut ac, pellentesque.
+                    </p>
+                    <a href="" class="link p-0">Ler mais</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</section>
+  
+  <!--============ PROFILE ============-->
+  <section class="container">
+    <div class="row">
+      <div class="grid-6">
+        <div class="flex-start-row">
+          <div class="profile-big">
+            <img src="profile/ny.jpg" alt="" class="profile-img">
+          </div>
+          <div class="ml-3">
+            <h3>Násser Yousef Ali</h3>
+            <h6 class="color-gray">@nasseryousef</h6>
+          </div>
+        </div>
+        <p class="mt-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. In non tempora minima.</p>
+      </div>
+      <div class="grid-6 flex-center flex-end-row">
+        <a href="#" class="btn">Meus dados</a>
+        <a href="#" class="btn ml-3">Adicionar post</a>
+      </div>
+    </div>
+  </section>
+  
+  <!--============ ADICIONAR POST ============-->
+  <section class="container">
+    <h3>Adicionar um novo post</h3>
+    <p class="mt-1">Preencha os campos abaixo para adicionar um novo post ao blog.</p>
+    
+    <form>
+      <div class="row">
+        <div class="grid-3 p-0">
+          <label for="date"><h6>Data</h6></label>
+          <input type="date" id="date" name="date" class="mt-1"/>
+        </div>
+        <div class="grid-3 p-0">
+          <label for="gategory"><h6>Categoria</h6></label>
+          <select id="gategory" name="gategory" class="mt-1">
+            <option value="tecnologia">tecnologia</option>
+            <option value="games">games</option>
+            <option value="cinema">cinema</option>
+            <option value="fotografia">fotografia</option>
+          </select>
+        </div>
+        <div class="grid-6 p-0">
+          <label for="title"><h6>Título</h6></label>
+          <input type="text" id="title" name="title" class="mt-1"/>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="grid-9 p-0">
+          <label for="resume"><h6>Resumo do post</h6></label>
+          <input type="text" id="resume" name="resume" class="mt-1"/>
+        </div>
+        <div class="grid-3 p-0">
+          <label for="duration"><h6>Duração</h6></label>
+          <select id="duration" name="duration" class="mt-1">
+            <option value="5">5min</option>
+            <option value="7">7min</option>
+            <option value="10">10min</option>
+            <option value="15">15min</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="grid-12 p-0">
+          <label for="description">Descrição</label>
+          <textarea name="description" id="description" class="w-100"></textarea>
+        </div>
+      </div>
+
+      <div class="row flex-end-row">
+        <button class="btn mr-2">Adicionar</button>
+      </div>
+    </form>
+  </section>
+
+  <!--============ POST ============-->
+  <section class="container">
+    <h6 class="uppercase color-primary text-center">GAMES</h6>
+    <h3 class="text-center">O que tem de novo no PS5??</h3>
+
+    <div class="flex-center my-3">
+        <div class="profile">
+            <img src="profile/ny.jpg" class="profile-img" alt="">
+        </div>
+        <div class="ml-2">
+            <h6 class="color-primary">Násser Yousef Ali</h6>
+            <h6 class="color-gray">Author</h6>
+        </div>
+        <p class="ml-4">Aug 2, 2020 - 8 min read</p>
+    </div>
+
+    <div class="img-banner hidden">
+        <img src="img/05.png" alt="">
+    </div>
+
+    <div class="row my-3">
+        <h4>Esse aqui é o primeiro título</h4>
+        <p class="mt-1">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ornare 
+            urna pharetra ut ac, pellentesque. Ultricies habitasse pretium 
+            purus viverra. Sit eget volutpat semper vitae metus, fringilla 
+            ullamcorper sapien nibh.
+
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ornare 
+            urna pharetra ut ac, pellentesque. Ultricies habitasse pretium 
+            purus viverra. Sit eget volutpat semper vitae metus, fringilla 
+            ullamcorper sapien nibh.
+        </p>
+    </div>
+
+    <div class="row">
+        <div class="grid-3 disappear"></div>
+        <div class="grid-6 card">
+            <div class="row">
+                <div class="grid-3 flex-center pl-1">
+                    <div class="profile-big">
+                        <img src="profile/ny.jpg" class="profile-img" alt="">
+                    </div>
+                </div>
+                <div class="grid-9">
+                    <h6 class="color-primary">Násser Yousef Ali</h6>
+                    <h6 class="color-gray">Author</h6>
+                    <p class="mt-1">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ornare 
+                        urna pharetra ut ac, pellentesque. Ultricies habitasse pretium 
+                        purus viverra. Sit eget volutpat semper vitae metus, fringilla 
+                        ullamcorper sapien nibh.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="grid-3 disappear"></div>
+    </div>
+</section>
+
   <!--============ LOGIN ============-->
   <section class="container">
     <div class="row flex-center">
-      <div class="grid-4">
+      <div class="grid-4  flex-center">
         <div class="flex-center">
           <img src="svg/blog-logo2.svg" class="icon-l" alt=""/>
         </div>
 
         <h6 class="text-center">Olá, faça o login para continuar.</h6>
         <form>
-          <input class="mt-3" type="text" name="user" placeholder="Digite seu usuário">
-          <input class="mt-2" type="password" name="password" id="" placeholder="Digite sua senha">
-          <button class="btn w-100 mt-4">Entrar</button>
+          <input class="mt-3" type="text" name="user" placeholder="Digite seu usuário"/>
+          <input class="mt-2" type="password" name="password" id="" placeholder="Digite sua senha"/>
+
+          <div class="card-danger p-2 my-1">
+            <h6 class="h7 color-red">Olá, isso é uma mensagem de erro</h6>
+        </div>
+
+        <div class="card-success p-2 my-1">
+            <h6 class="h7 color-green">Olá, isso é uma mensagem de erro</h6>
+        </div>
+
+        <div class="card-warning p-2 my-1">
+            <h6 class="h7 color-yellow">Olá, isso é uma mensagem de erro</h6>
+        </div>
+
+        <div class="card-info p-2 my-1">
+            <h6 class="h7 color-primary">Olá, isso é uma mensagem de erro</h6>
+        </div>
+
+          <button class="btn w-100 mt-2">Entrar</button>
         </form>
       </div>
     </div>
   </section>
-  
-  <!--============ PROFILE ============-->
+
+  <!--============ 404 NOT FOUND ============-->
   <section class="container">
-    <div class="row"></div>
-  </section>
+    <div class="row flex-center">
+        <img src="svg/blog-logo2.svg" class="icon-l" alt="" />
+    </div>
+
+    <div class="row">
+        <div class="grid-4 disappear"></div>
+        <div class="grid-4 flex-center">
+
+            <h1 class="h0 text-center color-primary">404</h1>
+            <h5 class="text-center">Página não encontrada!</h5>
+            <p class="text-center mt-1">
+                A página que você tá procurando não existe 
+                ou foi removida. Clique para voltar 
+                para o site.
+            </p>
+
+            <a href="" class="btn w-100 text-center mt-3">Voltar p/ home</a>
+        </div>
+        <div class="grid-4 disappear"></div>
+    </div>
+</section>
+
+
+<!--============ FOOTER ============-->
+<footer class="bg-section bt-black">
+    <section class="container pb-0 ">
+        <div class="row flex-center">
+            <img src="svg/blog-logo2.svg" style="max-width: 96px;" alt="">
+        </div>
+
+        <div class="row pb-3 bb-black">
+            <div class="grid-3">
+                <h4>Posts</h4>
+                <div class="flex-start-column mt-2">
+                    <a href="#" class="color-gray link-footer">Mais vistos</a>
+                    <a href="#" class="color-gray link-footer">Mais comentados</a>
+                    <a href="#" class="color-gray link-footer ">Mais populares</a>
+                    <a href="#" class="color-gray link-footer">Mais recentes</a>
+                </div>
+                
+            </div>
+
+            <div class="grid-3">
+                <h4>Categorias</h4>
+                <div class="flex-start-column mt-2">
+                    <a href="#" class="color-gray link-footer">Tecnologia</a>
+                    <a href="#" class="color-gray link-footer">Games</a>
+                    <a href="#" class="color-gray link-footer">Fotografia</a>
+                    <a href="#" class="color-gray link-footer">Cinema</a>
+                </div>
+            </div>
+
+            <div class="grid-6">
+                <h4 class="mb-2">Quer ser avisado dos novos posts do blog?</h4>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    Ornare urna pharetra ut ac, pellentesque. 
+                </p>
+                <div class="flex-start-row mt-2 w-100">
+                    <input type="text" name="search" id="" placeholder="Digite seu e-mail aqui"/>
+                    <button class="btn ml-2">Cadastrar</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="grid-9">
+                <p>2021 | Todos os direitos reservados. Projeto de React.js do curso <a href="https://www.frontpush.com.br/" target="_blank">FrontPUSH.</a> </p>
+            </div>
+
+            <div class="grid-3 flex-start-row">
+                <img src="svg/icon-facebook.svg" class="icon-s" alt="">
+                <img src="svg/icon-instagram.svg" class="icon-s ml-2" alt="">
+                <img src="svg/icon-youtube.svg" class="icon-s ml-2" alt="">
+                <img src="svg/icon-twitter.svg" class="icon-s ml-2" alt="">
+            </div>
+        </div>
+
+    </section>
+</footer>
   
   <!--============ JS ============-->
   <script src="js/script.js"></script>
