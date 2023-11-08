@@ -191,6 +191,7 @@
 
 .h0{
   @include typeface-1(h0, desktop);
+  white-space: nowrap;
   @include responsive(s) {
     @include typeface-1(h0, mobile);
   }
