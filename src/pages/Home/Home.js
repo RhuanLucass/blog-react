@@ -1,12 +1,48 @@
-import iconStar from 'svg/icon-star.svg';
-
 // Components
 import Hero from './Hero/Hero';
 import Banner from './Banner/Banner';
 import Card from './Card/Card';
 import Main from './Main/Main';
 
+// Images
+import iconStar from 'svg/icon-star.svg';
+
+// API
+import api from 'services/api';
+
+// Hooks
+import { useState, useEffect } from 'react';
+
+
 const Home = () => {
+
+  // State Variables
+  const [main, setMain] = useState([]);
+  const [mostseen, setMostseen] = useState([]);
+  const [banner, setBanner] = useState([]);
+
+  // Do this when the component mounts
+  useEffect(() => {
+    // Main
+    api.get('/posts?star=5&_limit=2&_order=desc')
+    .then((response) => {
+      setMain(response.data);
+    });
+
+    // Banner
+    api.get('/posts?_sort=date&_order=desc&_limit=1')
+    .then((response) => {
+      setMain(response.data);
+    });
+
+    // Most Seen
+    api.get('/posts?star=5&_limit=3')
+    .then((response) => {
+      setMostseen(response.data);
+    });
+  }, []);
+
+
   return (
     <>
       <Hero />
@@ -39,6 +75,7 @@ const Home = () => {
         </section>
       </div>
 
+      <Banner />
     </>
   );
 }
