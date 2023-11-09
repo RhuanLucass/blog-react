@@ -1,4 +1,8 @@
 import logo2 from 'svg/blog-logo2.svg';
+import iconFacebook from 'svg/icon-facebook.svg';
+import iconInstagram from 'svg/icon-instagram.svg';
+import iconYoutube from 'svg/icon-youtube.svg';
+import iconTwitter from 'svg/icon-twitter.svg';
 
 const Footer = () => {
   return (
@@ -44,16 +48,24 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="row">
+          <div className="row flex-center">
             <div className="grid-9">
               <p>2021 | Todos os direitos reservados. Projeto de React.js do curso <a href="https://www.frontpush.com.br/" target="_blank">FrontPUSH.</a> </p>
             </div>
 
             <div className="grid-3 flex-start-row">
-              <img src="svg/icon-facebook.svg" className="icon-s" alt="" />
-              <img src="svg/icon-instagram.svg" className="icon-s ml-2" alt="" />
-              <img src="svg/icon-youtube.svg" className="icon-s ml-2" alt="" />
-              <img src="svg/icon-twitter.svg" className="icon-s ml-2" alt="" />
+            <a href="">
+              <img src={iconFacebook} className="icon-s m-1" alt="" />
+            </a>
+            <a href="">
+              <img src={iconInstagram} className="icon-s m-1" alt="" />
+            </a>
+            <a href="">
+              <img src={iconYoutube} className="icon-s m-1" alt="" />
+            </a>
+            <a href="">
+              <img src={iconTwitter} className="icon-s m-1" alt="" />
+            </a>
             </div>
           </div>
 

@@ -25,21 +25,21 @@ const Home = () => {
   useEffect(() => {
     // Main
     api.get('/posts?star=5&_limit=2&_order=desc')
-    .then((response) => {
-      setMain(response.data);
-    });
+      .then((response) => {
+        setMain(response.data);
+      });
 
     // Banner
     api.get('/posts?_sort=date&_order=desc&_limit=1')
-    .then((response) => {
-      setMain(response.data);
-    });
+      .then((response) => {
+        setBanner(response.data);
+      });
 
     // Most Seen
     api.get('/posts?star=5&_limit=3')
-    .then((response) => {
-      setMostseen(response.data);
-    });
+      .then((response) => {
+        setMostseen(response.data);
+      });
   }, []);
 
 
@@ -55,8 +55,11 @@ const Home = () => {
             <p className="mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum deleniti quas, fuga ut illo quidem.</p>
           </div>
           <div className="grid-7">
-            <Main />
-            <Main />
+            {
+              main.map(item => {
+                return <Main key={item.id} content={item} />
+              })
+            }
           </div>
         </div>
       </section>
@@ -68,14 +71,20 @@ const Home = () => {
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium, optio!</p>
 
           <div className="row mt-4">
-            <Card />
-            <Card />
-            <Card />
+            {
+              mostseen.map((item) => {
+                return <Card key={item.id} content={item} />
+              })
+            }
           </div>
         </section>
       </div>
 
-      <Banner />
+      {
+        banner.map((item) => {
+          return <Banner key={item.id} content={item} />
+        })
+      }
     </>
   );
 }
