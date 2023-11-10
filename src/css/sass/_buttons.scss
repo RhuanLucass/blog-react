@@ -43,8 +43,8 @@ input, select, option, textarea{
   @include typeface-2(p3, desktop);
 }
 
-select, option{
-  height: 48px;
+select, option, input[type=date]{
+  height: 42px;
 }
 
 textarea{

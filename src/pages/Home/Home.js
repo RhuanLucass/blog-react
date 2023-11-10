@@ -3,6 +3,10 @@ import Hero from './Hero/Hero';
 import Banner from './Banner/Banner';
 import Card from './Card/Card';
 import Main from './Main/Main';
+import Header from "pages/Header/Header";
+import Footer from "pages/Footer/Footer";
+
+
 
 // Images
 import iconStar from 'svg/icon-star.svg';
@@ -12,6 +16,9 @@ import api from 'services/api';
 
 // Hooks
 import { useState, useEffect } from 'react';
+
+// Link
+import { Link } from 'react-router-dom';
 
 
 const Home = () => {
@@ -45,6 +52,7 @@ const Home = () => {
 
   return (
     <>
+      <Header/>
       <Hero />
 
       <section className="container">
@@ -85,6 +93,7 @@ const Home = () => {
           return <Banner key={item.id} content={item} />
         })
       }
+      <Footer/>
     </>
   );
 }

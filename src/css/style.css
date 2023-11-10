@@ -1892,8 +1892,8 @@ input, select, option, textarea {
   font-weight: 200;
 }
 
-select, option {
-  height: 48px;
+select, option, input[type=date] {
+  height: 42px;
 }
 
 textarea {
