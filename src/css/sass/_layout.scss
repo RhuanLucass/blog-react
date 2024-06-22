@@ -141,6 +141,10 @@ $gutter: 32px;
   display: flex;
 }
 
+.flex-grow-none{
+  flex: none !important;
+}
+
 .flex-start-row {
   display: flex;
   justify-content: flex-start;
